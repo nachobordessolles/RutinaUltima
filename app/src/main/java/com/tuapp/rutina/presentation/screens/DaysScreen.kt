@@ -1,7 +1,9 @@
 package com.tuapp.rutina.presentation.screens
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -22,6 +24,8 @@ import com.tuapp.rutina.presentation.theme.TextSecondary
 fun DaysScreen(
     progression: Progression,
     onDayClick: (Int) -> Unit,
+    onProgressionsClick: (() -> Unit)? = null,
+    onSettingsClick: (() -> Unit)? = null,
 ) {
     RutinaList {
         item { ScreenTitle(progression.name, progression.weeks) }
@@ -43,6 +47,17 @@ fun DaysScreen(
                     }
                 }
             }
+        }
+        onProgressionsClick?.let { item { TextCard("Otras progresiones", it) } }
+        onSettingsClick?.let { item { TextCard("Ajustes", it) } }
+    }
+}
+
+@Composable
+private fun TextCard(text: String, onClick: () -> Unit) {
+    RutinaCard(onClick = onClick) {
+        Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
+            Text(text, color = TextPrimary, fontSize = 15.sp)
         }
     }
 }

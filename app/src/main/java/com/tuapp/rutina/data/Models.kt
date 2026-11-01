@@ -58,3 +58,12 @@ fun List<Progression>.statusOf(index: Int, today: LocalDate = LocalDate.now()): 
         else -> ProgressionStatus.UPCOMING
     }
 }
+
+/** Índice de la progresión a mostrar al abrir la app: la en curso, si no la próxima, si no la última. */
+fun List<Progression>.currentIndex(today: LocalDate = LocalDate.now()): Int {
+    if (isEmpty()) return -1
+    val statuses = indices.map { statusOf(it, today) }
+    return statuses.indexOf(ProgressionStatus.ACTIVE).takeIf { it >= 0 }
+        ?: statuses.indexOf(ProgressionStatus.UPCOMING).takeIf { it >= 0 }
+        ?: lastIndex
+}

@@ -13,6 +13,7 @@ import androidx.wear.compose.material3.AppScaffold
 import androidx.wear.compose.navigation.SwipeDismissableNavHost
 import androidx.wear.compose.navigation.composable
 import androidx.wear.compose.navigation.rememberSwipeDismissableNavController
+import com.tuapp.rutina.data.currentIndex
 import com.tuapp.rutina.presentation.components.CenteredMessage
 import com.tuapp.rutina.presentation.screens.DaysScreen
 import com.tuapp.rutina.presentation.screens.ExerciseDetailScreen
@@ -32,6 +33,7 @@ class MainActivity : ComponentActivity() {
 }
 
 private object Routes {
+    const val HOME = "home"
     const val PROGRESSIONS = "progressions"
     const val DAYS = "days/{p}"
     const val EXERCISES = "exercises/{p}/{d}"
@@ -53,17 +55,31 @@ fun WearApp(viewModel: RutinaViewModel = viewModel()) {
 
     RutinaTheme {
         AppScaffold {
-            SwipeDismissableNavHost(navController = navController, startDestination = Routes.PROGRESSIONS) {
-                composable(Routes.PROGRESSIONS) {
+            SwipeDismissableNavHost(navController = navController, startDestination = Routes.HOME) {
+                composable(Routes.HOME) {
+                    val p = state.progressions.currentIndex()
                     when {
                         state.loading -> CenteredMessage("Cargando…")
                         state.loadError != null -> CenteredMessage(state.loadError!!)
-                        else -> ProgressionsScreen(
-                            progressions = state.progressions,
-                            onProgressionClick = { navController.navigate(Routes.days(it)) },
+                        p < 0 -> CenteredMessage("La rutina está vacía")
+                        else -> DaysScreen(
+                            progression = state.progressions[p],
+                            onDayClick = { d -> navController.navigate(Routes.exercises(p, d)) },
+                            onProgressionsClick = if (state.progressions.size > 1) {
+                                { navController.navigate(Routes.PROGRESSIONS) }
+                            } else {
+                                null
+                            },
                             onSettingsClick = { navController.navigate(Routes.SETTINGS) },
                         )
                     }
+                }
+                composable(Routes.PROGRESSIONS) {
+                    ProgressionsScreen(
+                        progressions = state.progressions,
+                        onProgressionClick = { navController.navigate(Routes.days(it)) },
+                        onSettingsClick = { navController.navigate(Routes.SETTINGS) },
+                    )
                 }
                 composable(Routes.DAYS) { entry ->
                     val p = entry.intArg("p")
@@ -71,7 +87,7 @@ fun WearApp(viewModel: RutinaViewModel = viewModel()) {
                     if (progression == null) {
                         CenteredMessage("Progresión no encontrada")
                     } else {
-                        DaysScreen(progression) { d -> navController.navigate(Routes.exercises(p, d)) }
+                        DaysScreen(progression, onDayClick = { d -> navController.navigate(Routes.exercises(p, d)) })
                     }
                 }
                 composable(Routes.EXERCISES) { entry ->
