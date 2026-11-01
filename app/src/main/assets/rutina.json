@@ -1,0 +1,754 @@
+[
+ {
+  "id": 6,
+  "name": "Progresion 6",
+  "weeks": "Semanas 21-24",
+  "offset": 168,
+  "days": [
+   {
+    "title": "Dia 1 - Tiron",
+    "sub": "Lunes - Dominadas supinas y remo",
+    "sections": [
+     {
+      "lbl": "CALENTAMIENTO",
+      "exs": [
+       {
+        "n": "Movilidad hombros (circulos / rotaciones)",
+        "s": "1",
+        "r": "10 por lado",
+        "d": "30 s",
+        "t": "Amplitud maxima controlada; sin elevar trapecios",
+        "e": [
+         "Elevar hombros",
+         "Mover solo el brazo sin escapula"
+        ],
+        "resp": "Respiracion lenta y profunda; exhalar en cada punto de mayor apertura o tension"
+       },
+       {
+        "n": "Rotacion externa con banda",
+        "s": "2",
+        "r": "12 por lado",
+        "d": "30 s",
+        "t": "Banda suave anclada a la altura del codo; de pie de costado al anclaje; codo pegado al costado del cuerpo y doblado a 90 grados (podes poner una toalla enrollada entre el codo y el cuerpo); rotar el antebrazo hacia afuera sin separar el codo ni girar el tronco; volver lento. Activa el manguito rotador, que estabiliza el hombro al colgarte y tirar",
+        "e": [
+         "Separar el codo del cuerpo",
+         "Girar el tronco para ayudarte",
+         "Usar una banda tan fuerte que sale con impulso",
+         "Hacerlo rapido"
+        ],
+        "resp": "Exhalar al rotar hacia afuera; inhalar al volver controlado",
+        "isNew": true
+       },
+       {
+        "n": "Colgado pasivo",
+        "s": "2",
+        "r": "20-30 s",
+        "d": "30 s",
+        "t": "Agarre prono; hombros relajados; columna descomprimida",
+        "e": [
+         "Encorvar hombros",
+         "Hacer fuerza",
+         "Apnea sostenida"
+        ],
+        "resp": "Respiracion diafragmatica lenta y profunda; dejar que el pecho se expanda; no retener aire"
+       },
+       {
+        "n": "Scapular pull-ups",
+        "s": "2",
+        "r": "6-8",
+        "d": "30 s",
+        "t": "Codos rectos; subir escapulas solo; bajar lento con control",
+        "e": [
+         "Doblar codos",
+         "Usar impulso",
+         "Rango parcial"
+        ],
+        "resp": "Exhalar al deprimir las escapulas (subida); inhalar al relajar y volver a la posicion inicial"
+       }
+      ]
+     },
+     {
+      "lbl": "BLOQUE PRINCIPAL",
+      "exs": [
+       {
+        "n": "Dominadas supinas con lastre (5 kg)",
+        "s": "6",
+        "r": "5",
+        "d": "2-3 min",
+        "t": "Lastre de 5 kg en cinturon o mochila; agarre supino al ancho de hombros; arrancar cada repeticion con los omoplatos activos (hombros lejos de las orejas); subir llevando el pecho hacia la barra con los codos hacia abajo, sin que pasen por detras del cuerpo; bajar controlado hasta casi extender, sin colgarte pasivo; sin balanceo. Antes de las series de trabajo, hacer 1-2 series de aproximacion (3-4 y despues 5-6 repeticiones sin lastre, sin llegar al esfuerzo) para entrar en calor y probar como esta el hombro ese dia. Progresion: al completar 6 series de 6, sumar 1-2 kg y volver a 5 repeticiones. Si el hombro molesta, sacar el lastre o bajar a 4 series",
+        "e": [
+         "Balanceo",
+         "Media rep",
+         "Usar impulso"
+        ],
+        "resp": "Inhalar al bajar (brazos extendidos); exhalar fuerte al tirar hacia la barra",
+        "isProgress": true
+       },
+       {
+        "n": "Remo a una mano con KB 20-24 kg",
+        "s": "3",
+        "r": "10-12 por lado",
+        "d": "90 s",
+        "t": "Una mano y una rodilla apoyadas en un banco o silla firme (o mano en una paralela baja), pie contrario en el piso; espalda paralela al piso y neutra; KB de 20 kg al inicio (pasar a 24 kg cuando salgan 12 limpias); tirar la KB hacia la cadera llevando el codo atras y cerca del cuerpo; apretar la escapula arriba 1 segundo; bajar controlado sin rotar el tronco",
+        "e": [
+         "Rotar el tronco para subir la KB",
+         "Tirar con el hombro hacia las orejas",
+         "Redondear la espalda",
+         "Usar impulso de la cadera"
+        ],
+        "resp": "Exhalar al tirar la KB hacia la cadera; inhalar al bajar",
+        "isNew": true
+       },
+       {
+        "n": "Face pull con banda (anclada en barra)",
+        "s": "3",
+        "r": "15",
+        "d": "60 s",
+        "t": "Anclar banda en barra a altura de cara; tirar hacia la cara; codos altos; retraccion escapular al final",
+        "e": [
+         "Tirar hacia el cuello",
+         "Codos bajos",
+         "Usar impulso"
+        ],
+        "resp": "Inhalar antes de tirar; exhalar al llevar las manos hacia la cara abriendo codos",
+        "isProgress": true
+       },
+       {
+        "n": "Farmer carry KB 24 kg",
+        "s": "3",
+        "r": "90-120 s",
+        "d": "60 s",
+        "t": "Hombros nivelados; abdomen firme; pasos controlados",
+        "e": [
+         "Inclinarse hacia la carga",
+         "Encoger hombro"
+        ],
+        "resp": "Respiracion ritmica y constante; exhalar cada 2-3 pasos; no retener aire al caminar",
+        "isProgress": true
+       }
+      ]
+     },
+     {
+      "lbl": "CORE",
+      "exs": [
+       {
+        "n": "Crunch con piernas elevadas",
+        "s": "3",
+        "r": "12-15",
+        "d": "60 s",
+        "t": "Acostado boca arriba con los pies apoyados sobre el banco y las rodillas a 90 grados; espalda baja pegada al piso; manos cruzadas sobre el pecho (o a los costados de la cabeza sin tirar del cuello); subir solo hasta despegar los omoplatos acercando las costillas a la pelvis; bajar lento 2-3 segundos sin apoyar la cabeza del todo; la espalda baja no se despega del piso",
+        "e": [
+         "Tirar del cuello con las manos",
+         "Subir el tronco entero como un sit-up",
+         "Despegar la espalda baja del piso",
+         "Hacerlo rapido con impulso"
+        ],
+        "resp": "Exhalar al subir (acercar costillas a pelvis); inhalar al bajar controlado",
+        "isNew": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Dia 2 - Piernas",
+    "sub": "Martes - Shrimp, peso muerto unilateral y Nordic",
+    "sections": [
+     {
+      "lbl": "CALENTAMIENTO",
+      "exs": [
+       {
+        "n": "Movilidad tobillo (rodilla a pared)",
+        "s": "1-2",
+        "r": "6 por lado",
+        "d": "30 s",
+        "t": "Talon apoyado; llevar la rodilla al frente sin colapsar el arco",
+        "e": [
+         "Despegar el talon",
+         "Girar la cadera",
+         "Hacer rebotes"
+        ],
+        "resp": "Respiracion lenta y continua; exhalar al llevar la rodilla hacia adelante en el punto de mayor rango"
+       },
+       {
+        "n": "Hip hinge (patron)",
+        "s": "2",
+        "r": "8",
+        "d": "30 s",
+        "t": "Llevar cadera atras con espalda neutra y costillas controladas",
+        "e": [
+         "Flexionar demasiado rodillas",
+         "Redondear lumbar",
+         "Bajar como sentadilla"
+        ],
+        "resp": "Inhalar antes de inclinar (bracing leve); exhalar al volver a la posicion erguida"
+       },
+       {
+        "n": "Dead bug",
+        "s": "2",
+        "r": "6 por lado",
+        "d": "30 s",
+        "t": "Lumbar pegada al piso; mover brazo y pierna opuesta sin perder control",
+        "e": [
+         "Arquear zona lumbar",
+         "Mover rapido",
+         "Acortar recorrido"
+        ],
+        "resp": "Exhalar lentamente al extender brazo y pierna; inhalar al volver al centro; nunca retener aire"
+       }
+      ]
+     },
+     {
+      "lbl": "SKILL (primero, sin fatiga)",
+      "exs": [
+       {
+        "n": "L-sit hold en paralelas (piernas extendidas)",
+        "s": "3",
+        "r": "30-40 s",
+        "d": "60 s",
+        "t": "Agarrar las paralelas; empujar hacia abajo; hombros deprimidos; piernas completamente extendidas y paralelas al piso; punta de pies estirada; mantener sin balanceo",
+        "e": [
+         "Encoger hombros",
+         "Piernas que caen",
+         "Doblar rodillas",
+         "Perder tension del core"
+        ],
+        "resp": "Exhalar al subir y sostener; respiracion corta y controlada manteniendo la tension; no retener aire",
+        "isProgress": true
+       }
+      ]
+     },
+     {
+      "lbl": "BLOQUE PRINCIPAL",
+      "exs": [
+       {
+        "n": "Shrimp squat asistido (con barra)",
+        "s": "3",
+        "r": "8-10 por lado",
+        "d": "90 s",
+        "t": "De pie; doblar una pierna atras agarrando el pie con la mano del mismo lado; usar la barra para asistencia; bajar controlado hasta que la rodilla trasera casi toca el piso; subir empujando con el talon de la pierna de apoyo",
+        "e": [
+         "Caer de golpe",
+         "Rodilla de apoyo que colapsa",
+         "No usar asistencia al inicio",
+         "Tronco muy inclinado",
+         "Perder el balance"
+        ],
+        "resp": "Inhalar antes de bajar (bracing abdominal); exhalar al subir pasando el punto mas dificil",
+        "isProgress": true
+       },
+       {
+        "n": "Peso muerto rumano a una pierna con KB 16-20 kg",
+        "s": "3",
+        "r": "8-10 por lado",
+        "d": "90 s",
+        "t": "KB de 16 kg al inicio (pasar a 20 kg cuando salgan 10 limpias) en la mano opuesta a la pierna de apoyo; rodilla de apoyo levemente flexionada; llevar la cadera atras y el torso hacia adelante en bloque, con la pierna libre extendida atras; espalda neutra; bajar hasta sentir tension en isquios y volver apretando gluteo. Una mano libre puede tocar una pared o la barra si perdes el equilibrio",
+        "e": [
+         "Redondear la espalda",
+         "Abrir la cadera hacia el costado",
+         "Doblar demasiado la rodilla de apoyo (se vuelve sentadilla)",
+         "Perder el equilibrio por ir rapido"
+        ],
+        "resp": "Inhalar antes de bajar; exhalar al volver a la posicion erguida apretando gluteos",
+        "isNew": true
+       },
+       {
+        "n": "Nordic curl band",
+        "s": "3",
+        "r": "10-12",
+        "d": "90 s",
+        "t": "De rodillas con pies fijos; bajar lentamente controlando con isquiotibiales",
+        "e": [
+         "Caida rapida sin control",
+         "Arquear lumbar"
+        ],
+        "resp": "Inhalar al inicio (posicion erguida); exhalar lentamente durante toda la bajada controlada",
+        "isProgress": true
+       }
+      ]
+     },
+     {
+      "lbl": "PANTORRILLA",
+      "exs": [
+       {
+        "n": "Elevacion de talon a una pierna con KB 24 kg",
+        "s": "3",
+        "r": "12-15 por lado",
+        "d": "60 s",
+        "t": "Punta del pie apoyada en un escalon con el talon en el aire; KB de 24 kg en la mano del mismo lado; mano libre en la pared o la barra; bajar el talon por debajo del escalon y subir hasta quedar en puntas; pausa de 1 segundo arriba. Trabaja pantorrilla",
+        "e": [
+         "Rebotar abajo",
+         "Rango corto",
+         "Doblar la rodilla para ayudarse"
+        ],
+        "resp": "Exhalar al subir en puntas; inhalar al bajar el talon",
+        "isNew": true
+       }
+      ]
+     },
+     {
+      "lbl": "CORE",
+      "exs": [
+       {
+        "n": "Hollow hold",
+        "s": "3",
+        "r": "40-60 s",
+        "d": "60 s",
+        "t": "Espalda baja pegada al piso; brazos a los costados del cuerpo (no pegados a las orejas, para no cargar el hombro)",
+        "e": [
+         "Arquear lumbar"
+        ],
+        "resp": "Exhalar profundo vaciando el aire para hundir las costillas; respiracion corta y controlada manteniendo la tension",
+        "isProgress": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Dia 3 - Empuje",
+    "sub": "Jueves - Dips, press a una mano y deltoides medio",
+    "sections": [
+     {
+      "lbl": "CALENTAMIENTO",
+      "exs": [
+       {
+        "n": "Movilidad hombros (circulos / rotaciones)",
+        "s": "1",
+        "r": "10",
+        "d": "30 s",
+        "t": "Amplitud maxima controlada; sin elevar trapecios",
+        "e": [
+         "Elevar hombros",
+         "Mover solo el brazo sin escapula"
+        ],
+        "resp": "Respiracion lenta y profunda; exhalar en cada punto de mayor apertura o tension"
+       },
+       {
+        "n": "Retracciones escapulares en barra",
+        "s": "2",
+        "r": "8",
+        "d": "30 s",
+        "t": "Colgar pasivo de la barra; subir escapulas sin doblar codos; bajar con control",
+        "e": [
+         "Doblar codos",
+         "Usar impulso",
+         "Rango parcial"
+        ],
+        "resp": "Exhalar al retraer (juntar escapulas); inhalar al soltar y volver a la posicion inicial"
+       },
+       {
+        "n": "Flexiones inclinadas (manos altas)",
+        "s": "1-2",
+        "r": "8",
+        "d": "30 s",
+        "t": "Cuerpo rigido; pecho al apoyo; codos a 45 grados",
+        "e": [
+         "Caer la cadera",
+         "Flectar cuello",
+         "Rebotar abajo"
+        ],
+        "resp": "Inhalar en la bajada (pecho al suelo); exhalar al empujar hacia arriba"
+       },
+       {
+        "n": "Shoulder dislocations con palo",
+        "s": "2",
+        "r": "10",
+        "d": "45 s",
+        "t": "Agarre amplio; brazos rectos todo el tiempo; pasar el palo por encima de la cabeza hacia atras solo en el rango sin dolor; volver controlado; agarre lo mas cerrado posible manteniendo brazos rectos",
+        "e": [
+         "Doblar los codos",
+         "Forzar el rango",
+         "Compensar con lumbar"
+        ],
+        "resp": "Respiracion lenta y continua; exhalar al pasar el palo por el punto de mayor tension (sobre la cabeza)",
+        "isProgress": true
+       }
+      ]
+     },
+     {
+      "lbl": "BLOQUE PRINCIPAL",
+      "exs": [
+       {
+        "n": "Dips con lastre (6 kg)",
+        "s": "4",
+        "r": "8-10",
+        "d": "2 min",
+        "t": "Lastre de 6 kg en cinturon (o mochila); cuerpo vertical; codos pegados al cuerpo; bajar hasta 90 grados, sin pasarte para cuidar el hombro; bajada lenta de 3 segundos; subida controlada sin bloquear los codos arriba. Progresion: al completar 4 series de 10 con buena tecnica, sumar 1-2 kg. Si el hombro molesta, bajar el lastre o volver a dips sin peso",
+        "e": [
+         "Inclinarse hacia adelante",
+         "Abrir codos",
+         "Media rep",
+         "Bajar mas de 90 grados",
+         "Balancear el lastre"
+        ],
+        "resp": "Inhalar en la bajada controlada; exhalar fuerte al empujar hacia arriba",
+        "isProgress": true
+       },
+       {
+        "n": "Press suelo a una mano con KB 20 kg",
+        "s": "3",
+        "r": "6-8 por lado",
+        "d": "90 s",
+        "t": "Acostado en el piso con rodillas flexionadas; KB de 20 kg en una mano, codo a 45 grados; bajar 3 segundos hasta apoyar el triceps; empujar vertical; la mano libre apoyada en el piso; escapulas activas; no bloquear el codo arriba, queda leve flexion con triceps activo",
+        "e": [
+         "Rotar el tronco al empujar",
+         "Abrir el codo a 90 grados",
+         "Perder tension al bajar",
+         "Arquear lumbar excesivo"
+        ],
+        "resp": "Inhalar antes de bajar; exhalar fuerte al empujar hacia arriba",
+        "isProgress": true
+       },
+       {
+        "n": "Extension de triceps con banda (pushdown)",
+        "s": "3",
+        "r": "12-15",
+        "d": "60 s",
+        "t": "Banda anclada en la barra de dominadas; de pie de frente; codos pegados al costado del cuerpo; antebrazos a 90 grados. Extender los codos empujando la banda hacia abajo hasta casi rectos, sin bloquear el codo (se te traba con los brazos rectos); codos fijos sin moverse hacia adelante; volver controlado sin que la banda tire de golpe. Aisla triceps sin sumar carga al hombro anterior",
+        "e": [
+         "Mover los codos hacia adelante",
+         "Usar impulso del cuerpo",
+         "Bloquear el codo al final",
+         "Quedarse a mitad de recorrido"
+        ],
+        "resp": "Exhalar al extender (empujar hacia abajo); inhalar al volver controlado",
+        "isProgress": true
+       },
+       {
+        "n": "Vuelo lateral de pie con cadena de 4 kg (de a un brazo)",
+        "s": "3",
+        "r": "12-15 por lado",
+        "d": "60 s",
+        "t": "De pie, con la otra mano apoyada en la barra o la pared para no balancearte; cadena de 4 kg agarrada con la mano (enrollada para que no cuelgue); brazo al costado con el codo apenas flexionado; subir hasta la altura del hombro, un poco hacia adelante del plano del cuerpo (unos 30 grados), con la palma hacia abajo o neutra; bajar en 3 segundos sin dejar caer el brazo. Trabaja el deltoides medio. Si pellizca el hombro, cortar el recorrido antes de llegar a la altura del hombro o volver a la version acostada",
+        "e": [
+         "Balancear el cuerpo para subir",
+         "Subir por encima de la altura del hombro",
+         "Encoger el hombro hacia la oreja",
+         "Dejar caer el brazo",
+         "Bloquear el codo"
+        ],
+        "resp": "Exhalar al subir; inhalar al bajar controlado",
+        "isNew": true
+       }
+      ]
+     },
+     {
+      "lbl": "CORE",
+      "exs": [
+       {
+        "n": "Crunch reverso en banco",
+        "s": "3",
+        "r": "12-15",
+        "d": "60 s",
+        "t": "Acostado en el banco; manos debajo de los gluteos (sin agarrarte del banco ni estirar los brazos sobre la cabeza, para no cargar el hombro despues de los dips y el press); rodillas flexionadas; subir las rodillas hacia el pecho curvando la pelvis hasta que la cadera se despegue apenas del banco; bajar lento 2-3 segundos sin apoyar los pies",
+        "e": [
+         "Balancearse para subir",
+         "Tirar con los brazos",
+         "Bajar de golpe",
+         "Subir solo las rodillas sin curvar la pelvis"
+        ],
+        "resp": "Exhalar al subir las rodillas; inhalar al bajar controlado",
+        "isNew": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Dia 4 - Comodin",
+    "sub": "Viernes - Core suave y movilidad",
+    "sections": [
+     {
+      "lbl": "CALENTAMIENTO",
+      "exs": [
+       {
+        "n": "Movilidad munecas (circulos / estiramientos)",
+        "s": "2",
+        "r": "10 por lado",
+        "d": "30 s",
+        "t": "Circulos lentos en ambas direcciones; estirar la muneca hacia adelante y atras; preparacion para plancha y apoyos",
+        "e": [
+         "Forzar el rango",
+         "Hacer circulos rapidos"
+        ],
+        "resp": "Respiracion lenta y continua; no retener aire; exhalar en los puntos de mayor tension"
+       },
+       {
+        "n": "Movilidad hombros (circulos amplios)",
+        "s": "1",
+        "r": "10 por lado",
+        "d": "30 s",
+        "t": "Circulos lentos y amplios; soltar tension acumulada",
+        "e": [
+         "Elevar hombros",
+         "Hacer circulos rapidos"
+        ],
+        "resp": "Respiracion lenta y profunda; exhalar en cada punto de mayor apertura o tension"
+       },
+       {
+        "n": "Cat-cow (cuadrupedia)",
+        "s": "2",
+        "r": "10",
+        "d": "30 s",
+        "t": "Alternar arquear y redondear la columna lentamente; sincronizar con la respiracion",
+        "e": [
+         "Mover solo el cuello",
+         "Ir demasiado rapido"
+        ],
+        "resp": "Inhalar al arquear (cow, pecho arriba); exhalar al redondear (cat, ombligo adentro)"
+       },
+       {
+        "n": "Pike stretch (estiramiento isquios)",
+        "s": "2",
+        "r": "30 s",
+        "d": "30 s",
+        "t": "De pie; bajar lentamente con manos al piso o tobillos; rodillas casi rectas; relajar isquiotibiales; clave para el L-sit completo",
+        "e": [
+         "Forzar el rango",
+         "Rebotar",
+         "Rodillas completamente bloqueadas"
+        ],
+        "resp": "Exhalar profundo al inclinarse hacia adelante; mantener respiracion lenta y continua en el estiramiento"
+       }
+      ]
+     },
+     {
+      "lbl": "CORE SUAVE",
+      "exs": [
+       {
+        "n": "Plancha (front plank)",
+        "s": "3",
+        "r": "30-40 s",
+        "d": "60 s",
+        "t": "Apoyo en antebrazos con los codos debajo de los hombros (o rodillas apoyadas si el hombro molesta); cuerpo en linea recta de cabeza a talones; gluteos y abdomen apretados; mirada al piso",
+        "e": [
+         "Cadera caida",
+         "Cadera muy alta",
+         "Hundir el cuello",
+         "Encoger los hombros"
+        ],
+        "resp": "Respiracion corta y continua; exhalar lento manteniendo la tension abdominal; no retener aire",
+        "isNew": true
+       },
+       {
+        "n": "Pallof press con banda liviana (codos pegados)",
+        "s": "2-3",
+        "r": "10 por lado",
+        "d": "60 s",
+        "t": "Banda liviana anclada en la barra de dominadas a la altura del pecho; de pie de costado a la barra, pies al ancho de caderas; sostener la banda con ambas manos pegada al pecho; empujar las manos al frente solo hasta donde el tronco no gire (codos pegados, sin cargar el hombro); sostener 2 segundos y volver. La banda tira hacia un costado y el core resiste la rotacion",
+        "e": [
+         "Dejar que el tronco rote hacia la barra",
+         "Encoger los hombros",
+         "Arquear lumbar",
+         "Pararse muy cerca del anclaje (sin tension)"
+        ],
+        "resp": "Exhalar al empujar las manos al frente; inhalar al volver al pecho",
+        "isNew": true
+       },
+       {
+        "n": "Rotaciones rusas KB 16 kg",
+        "s": "3",
+        "r": "15 por lado",
+        "d": "60 s",
+        "t": "Sentado con tronco a 45 grados; pies despegados del piso (o apoyados si molesta la lumbar); rotar de lado a lado llevando la KB cerca del piso; maximo rango de rotacion",
+        "e": [
+         "Rotar con impulso",
+         "Perder la inclinacion del tronco",
+         "Colapsar la espalda"
+        ],
+        "resp": "Exhalar al rotar hacia cada lado; inhalar al volver al centro; nunca retener aire",
+        "isProgress": true
+       }
+      ]
+     },
+     {
+      "lbl": "MOVILIDAD",
+      "exs": [
+       {
+        "n": "Giros toracicos (cuadrupedia)",
+        "s": "2",
+        "r": "8 por lado",
+        "d": "30 s",
+        "t": "Apoyar mano en nuca; rotar desde T4; cadera quieta",
+        "e": [
+         "Rotar desde lumbar",
+         "Elevar cadera",
+         "Rango forzado"
+        ],
+        "resp": "Exhalar al rotar hacia arriba (apertura); inhalar al volver al centro"
+       },
+       {
+        "n": "Pike stretch activo",
+        "s": "3",
+        "r": "50 s",
+        "d": "30 s",
+        "t": "Sentado con las piernas estiradas al frente; espalda larga, sin redondearla; inclinarte desde la cadera contrayendo cuadriceps y flexores de cadera para llevar el pecho hacia las piernas; las manos solo acompanan, no tiran; quedarte en el rango donde la espalda sigue recta. Es lo mas parecido a la posicion del L-sit",
+        "e": [
+         "Rebotar",
+         "Redondear la espalda para llegar mas lejos",
+         "Tirar con las manos",
+         "Forzar el rango"
+        ],
+        "resp": "Exhalar al inclinar el tronco; inhalar al volver levemente; respiracion activa en cada repeticion"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Dia 5 - Tecnico",
+    "sub": "Domingo - Rutina definitiva",
+    "sections": [
+     {
+      "lbl": "CALENTAMIENTO",
+      "exs": [
+       {
+        "n": "Dead bug",
+        "s": "2",
+        "r": "6 por lado",
+        "d": "30 s",
+        "t": "Lumbar pegada al piso; movimiento lento y controlado",
+        "e": [
+         "Arquear lumbar",
+         "Mover rapido",
+         "Acortar recorrido"
+        ],
+        "resp": "Exhalar lentamente al extender brazo y pierna; inhalar al volver al centro; nunca retener aire"
+       },
+       {
+        "n": "Giros toracicos (cuadrupedia)",
+        "s": "1",
+        "r": "8 por lado",
+        "d": "30 s",
+        "t": "Apoyar mano en nuca; rotar desde T4; cadera quieta",
+        "e": [
+         "Rotar desde lumbar",
+         "Elevar cadera",
+         "Rango forzado"
+        ],
+        "resp": "Exhalar al rotar hacia arriba (apertura); inhalar al volver al centro"
+       },
+       {
+        "n": "Movilidad hombros",
+        "s": "1",
+        "r": "8",
+        "d": "30 s",
+        "t": "Amplitud maxima controlada; sin elevar trapecios",
+        "e": [
+         "Elevar hombros",
+         "Compensar con lumbar"
+        ],
+        "resp": "Respiracion lenta y profunda; exhalar en cada punto de mayor apertura o tension"
+       },
+       {
+        "n": "Colgado pasivo",
+        "s": "2",
+        "r": "20-30 s",
+        "d": "30 s",
+        "t": "Descomprimir y conectar antes del bloque de dominadas",
+        "e": [
+         "Hacer fuerza",
+         "Apnea sostenida"
+        ],
+        "resp": "Respiracion diafragmatica lenta y profunda; dejar que el pecho se expanda; no retener aire"
+       }
+      ]
+     },
+     {
+      "lbl": "BLOQUE PRINCIPAL",
+      "exs": [
+       {
+        "n": "Colgado activo",
+        "s": "3",
+        "r": "30-40 s",
+        "d": "60 s",
+        "t": "Escapulas abajo y atras; codos ligeramente flexionados; sin encorvar",
+        "e": [
+         "Relajar escapulas",
+         "Encorvar hombros"
+        ],
+        "resp": "Respiracion diafragmatica constante; no retener aire; exhalar al activar escapulas hacia abajo",
+        "isProgress": true
+       },
+       {
+        "n": "Pullover KB en banco",
+        "s": "3",
+        "r": "12-15",
+        "d": "60 s",
+        "t": "Acostado en banco; KB con ambas manos sobre el pecho; bajar lentamente por detras de la cabeza manteniendo codos ligeramente flexionados; volver con control activando el dorsal",
+        "e": [
+         "Bajar demasiado rapido",
+         "Abrir demasiado los codos",
+         "Perder tension del core",
+         "Usar impulso para subir"
+        ],
+        "resp": "Inhalar al bajar la KB detras de la cabeza (expansion del pecho); exhalar al volver al punto de partida",
+        "isProgress": true
+       },
+       {
+        "n": "Dominadas supinas sin asistencia",
+        "s": "4",
+        "r": "5-8",
+        "d": "2 min",
+        "t": "Mismo agarre supino que el Dia 4; control total; sin banda",
+        "e": [
+         "Balanceo",
+         "Medio rango",
+         "Usar impulso"
+        ],
+        "resp": "Inhalar al bajar (brazos extendidos); exhalar fuerte al tirar hacia la barra",
+        "isProgress": true
+       },
+       {
+        "n": "Face pull con banda (anclada en barra)",
+        "s": "3",
+        "r": "15",
+        "d": "60 s",
+        "t": "Anclar banda en barra a altura de cara; tirar hacia la cara; codos altos; retraccion escapular al final",
+        "e": [
+         "Tirar hacia el cuello",
+         "Codos bajos",
+         "Usar impulso"
+        ],
+        "resp": "Inhalar antes de tirar; exhalar al llevar las manos hacia la cara abriendo codos",
+        "isProgress": true
+       }
+      ]
+     },
+     {
+      "lbl": "CORE",
+      "exs": [
+       {
+        "n": "Rueda abdominal (rodillas)",
+        "s": "2",
+        "r": "10-12",
+        "d": "90 s",
+        "t": "Dia tecnico; volumen reducido; priorizar calidad",
+        "e": [
+         "Arquear lumbar",
+         "Salir muy lejos"
+        ],
+        "resp": "Exhalar al extender (rueda hacia adelante); inhalar al volver jalando el core",
+        "isProgress": true
+       },
+       {
+        "n": "Hollow hold",
+        "s": "2",
+        "r": "40-50 s",
+        "d": "60 s",
+        "t": "Cierre del dia; espalda baja pegada al piso",
+        "e": [
+         "Arquear lumbar",
+         "Separar piernas"
+        ],
+        "resp": "Exhalar profundo vaciando el aire para hundir las costillas; respiracion corta y controlada manteniendo la tension",
+        "isProgress": true
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]
