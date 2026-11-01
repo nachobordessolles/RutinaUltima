@@ -56,6 +56,7 @@ fun RutinaList(
 fun RutinaCard(
     modifier: Modifier = Modifier,
     onClick: (() -> Unit)? = null,
+    borderColor: androidx.compose.ui.graphics.Color = CardBorder,
     content: @Composable ColumnScope.() -> Unit,
 ) {
     val shape = RoundedCornerShape(16.dp)
@@ -64,7 +65,7 @@ fun RutinaCard(
             .fillMaxWidth()
             .clip(shape)
             .background(CardBackground)
-            .border(1.dp, CardBorder, shape)
+            .border(if (borderColor == CardBorder) 1.dp else 2.dp, borderColor, shape)
             .then(if (onClick != null) Modifier.clickable(onClick = onClick) else Modifier)
             .padding(horizontal = 14.dp, vertical = 10.dp),
         content = content,

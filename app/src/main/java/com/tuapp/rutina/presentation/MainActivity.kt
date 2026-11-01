@@ -8,11 +8,14 @@ import androidx.compose.runtime.getValue
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.compose.LifecycleEventEffect
 import androidx.navigation.NavBackStackEntry
 import androidx.wear.compose.material3.AppScaffold
 import androidx.wear.compose.navigation.SwipeDismissableNavHost
 import androidx.wear.compose.navigation.composable
 import androidx.wear.compose.navigation.rememberSwipeDismissableNavController
+import com.tuapp.rutina.data.ProgressStore
 import com.tuapp.rutina.data.currentIndex
 import com.tuapp.rutina.presentation.components.CenteredMessage
 import com.tuapp.rutina.presentation.screens.DaysScreen
@@ -53,6 +56,9 @@ fun WearApp(viewModel: RutinaViewModel = viewModel()) {
     val state by viewModel.state.collectAsStateWithLifecycle()
     val navController = rememberSwipeDismissableNavController()
 
+    // Al volver a la app, recalcular los días hechos por si empezó una semana nueva.
+    LifecycleEventEffect(Lifecycle.Event.ON_RESUME) { viewModel.refreshCompletedDays() }
+
     RutinaTheme {
         AppScaffold {
             SwipeDismissableNavHost(navController = navController, startDestination = Routes.HOME) {
@@ -65,6 +71,7 @@ fun WearApp(viewModel: RutinaViewModel = viewModel()) {
                         else -> DaysScreen(
                             progression = state.progressions[p],
                             onDayClick = { d -> navController.navigate(Routes.exercises(p, d)) },
+                            isCompleted = { d -> ProgressStore.key(state.progressions[p], d) in state.completedDays },
                             onProgressionsClick = if (state.progressions.size > 1) {
                                 { navController.navigate(Routes.PROGRESSIONS) }
                             } else {
@@ -87,7 +94,11 @@ fun WearApp(viewModel: RutinaViewModel = viewModel()) {
                     if (progression == null) {
                         CenteredMessage("Progresión no encontrada")
                     } else {
-                        DaysScreen(progression, onDayClick = { d -> navController.navigate(Routes.exercises(p, d)) })
+                        DaysScreen(
+                            progression,
+                            onDayClick = { d -> navController.navigate(Routes.exercises(p, d)) },
+                            isCompleted = { d -> ProgressStore.key(progression, d) in state.completedDays },
+                        )
                     }
                 }
                 composable(Routes.EXERCISES) { entry ->
@@ -97,15 +108,24 @@ fun WearApp(viewModel: RutinaViewModel = viewModel()) {
                     if (day == null) {
                         CenteredMessage("Día no encontrado")
                     } else {
-                        ExercisesScreen(day) { e -> navController.navigate(Routes.detail(p, d, e)) }
+                        ExercisesScreen(day, setsDone = viewModel.setsFor(p, d)) { e ->
+                            navController.navigate(Routes.detail(p, d, e))
+                        }
                     }
                 }
                 composable(Routes.DETAIL) { entry ->
-                    val day = state.progressions.getOrNull(entry.intArg("p"))?.days?.getOrNull(entry.intArg("d"))
+                    val p = entry.intArg("p")
+                    val d = entry.intArg("d")
+                    val day = state.progressions.getOrNull(p)?.days?.getOrNull(d)
                     if (day == null) {
                         CenteredMessage("Ejercicio no encontrado")
                     } else {
-                        ExerciseDetailScreen(day, initialIndex = entry.intArg("e"))
+                        ExerciseDetailScreen(
+                            day,
+                            initialIndex = entry.intArg("e"),
+                            setsDone = viewModel.setsFor(p, d),
+                            onSetsChange = { viewModel.updateSets(p, d, it) },
+                        )
                     }
                 }
                 composable(Routes.SETTINGS) {

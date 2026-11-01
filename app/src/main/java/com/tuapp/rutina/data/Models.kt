@@ -67,3 +67,51 @@ fun List<Progression>.currentIndex(today: LocalDate = LocalDate.now()): Int {
         ?: statuses.indexOf(ProgressionStatus.UPCOMING).takeIf { it >= 0 }
         ?: lastIndex
 }
+
+private val NUMBER = Regex("""\d+""")
+
+/** Cantidad de series ("3" → 3, "1-2" → 2). Mínimo 1. */
+fun Exercise.setCount(): Int =
+    NUMBER.findAll(s).mapNotNull { it.value.toIntOrNull() }.maxOrNull()?.coerceAtLeast(1) ?: 1
+
+/** Descanso en segundos ("30 s" → 30, "2-3 min" → 120). 0 si no hay. */
+fun Exercise.restSeconds(): Int {
+    val first = NUMBER.find(d)?.value?.toIntOrNull() ?: return 0
+    return if (d.contains("min", ignoreCase = true)) first * 60 else first
+}
+
+private val WEEKDAYS = mapOf(
+    "lunes" to java.time.DayOfWeek.MONDAY,
+    "martes" to java.time.DayOfWeek.TUESDAY,
+    "miercoles" to java.time.DayOfWeek.WEDNESDAY,
+    "jueves" to java.time.DayOfWeek.THURSDAY,
+    "viernes" to java.time.DayOfWeek.FRIDAY,
+    "sabado" to java.time.DayOfWeek.SATURDAY,
+    "domingo" to java.time.DayOfWeek.SUNDAY,
+)
+
+/** Día de la semana según el subtítulo ("Lunes - …" → MONDAY), o null si no lo indica. */
+fun Day.weekday(): java.time.DayOfWeek? {
+    val word = java.text.Normalizer.normalize(sub.trim().substringBefore(' ').substringBefore('-'), java.text.Normalizer.Form.NFD)
+        .replace(Regex("\\p{M}"), "")
+        .lowercase()
+    return WEEKDAYS[word]
+}
+
+/** True si todas las series de todos los ejercicios del día están hechas. */
+fun Day.isComplete(setsDone: List<Int>): Boolean =
+    allExercises.isNotEmpty() && allExercises.withIndex().all { (i, ex) -> setsDone.getOrElse(i) { 0 } >= ex.setCount() }
+
+private val TIMED = Regex("""^(\d+)\s*(?:-\s*(\d+))?\s*(s|seg|segundos?|min|minutos?)\b""", RegexOption.IGNORE_CASE)
+
+/**
+ * Si las repeticiones son un tiempo ("40 s", "30-40 s", "90-120 s", "1 min"), devuelve el rango en
+ * segundos; si son repeticiones normales, null.
+ */
+fun Exercise.timeRange(): IntRange? {
+    val m = TIMED.find(r.trim()) ?: return null
+    val mult = if (m.groupValues[3].startsWith("min", ignoreCase = true)) 60 else 1
+    val min = m.groupValues[1].toInt() * mult
+    val max = (m.groupValues[2].toIntOrNull() ?: m.groupValues[1].toInt()) * mult
+    return if (min <= 0) null else minOf(min, max)..maxOf(min, max)
+}
